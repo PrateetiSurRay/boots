@@ -1,0 +1,6 @@
+.header-img{
+    background-image: url(assets/bg.jpg);
+   
+    background-repeat: no-repeat;
+    margin-top: -150px;
+    min-height: 100vh; }
