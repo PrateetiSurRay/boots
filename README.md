@@ -1,2 +1,2 @@
 # boots
-bootstap task
+bootstrap task
