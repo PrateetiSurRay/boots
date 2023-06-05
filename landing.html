@@ -13,10 +13,10 @@
 </head>
 <body>
    
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="scroll">
+<nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav" id="scroll">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="assets/promodIO-logo.png" alt="" width="100%" height="30" class="d-inline-block align-text-top"/>
+            <img src="assets/promodIO-logo.png" alt="" width="100%" height="auto" class="d-inline-block align-text-top ps-5"/>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,45 +24,66 @@
          <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 ">
               <li class="nav-item me-2">
-                <a class="nav-link" href="#howItWorks">HOW IT WORKS</a>
+                <a class="nav-link " href="#howItWorks"><small>HOW IT WORKS</small></a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#whyPromod">WHY PROMOD.IO</a>
+                <a class="nav-link" href="#whyPromod"><small>WHY PROMOD.IO</small></a>
               </li>
               <li class="nav-item me-2">
-                <a class="nav-link" href="#contactUs">CONTACT US</a>
+                <a class="nav-link" href="#contactUs"><small>CONTACT US</small></a>
               </li>
             </ul>
             <span class="me-5">
-                <button class="btn btn-outline-danger peach me-5" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal">LOG IN</button>
+                <button class="btn btn-outline btn-peach me-5 ps-4 pe-4" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal"><small>LOG IN</small></button>
                 <div class="modal fade " id="loginModal">
                   <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
-                          <div class="modal-header">
-                              <div class="modal-title">
+                          <div class="modal-header d-flex flex-column">
+                              <div class="modal-title mb-3">
                                   <img src="assets/promodIO-logo.png"/>
-                                  <div class="d-flex" style="color:white; background-color: rgb(57, 71, 102)">SIGN UP</div>
                               </div>
-                              
+                              <div class="modal-divider d-flex justify-content-center fs-4" style="color:white; background-color: rgb(57, 71, 102)">SIGN UP</div>
+                              <div class="d-flex justify-content-between mt-4">
+                               <div class="me-4"><img src="assets/form-facebook-icon.png" alt="fb-icon"> Sign in with Facebook</div>
+                               <div class="flex-item"><img src="assets/form-twiter-icon.png" alt="twt-icon"> Sign in with Twitter</div>
+                              </div>
                           </div>
                           <div class="modal-body">
-                          <h6>or</h6>
-                            <formclass="mb-3">
+                          <h6 class="text-center">or</h6>
+                            <form class="mb-3">
                               <label for="email" class="form-label">Email address</label>
-                              <input type="email" class="form-control" id="email" placeholder="Text....">
+                              <div class="input-group">
+                                <div class="input-group-text bg-white">
+                                  <img src="assets/user-icon.png" alt="user-icon">
+                                </div>
+                                 <input type="email" class="form-control" id="email" placeholder="Text....">
+                              </div>
                               <div class="mb-3 row">
                                 <div class="col-6"><label for="inputPassword" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="inputPassword"></div>
+                                  <div class="input-group">
+                                    <div class="input-group-text bg-white">
+                                      <img src="assets/lock-icon.png" alt="lock-icon">
+                                    </div>
+                                     <input class="form-control border-end-0 border" type="password" value="password " id="password">
+                                   </div>
+                                </div>
                                 <div class="col-6"><label for="inputPassword" class="form-label">Confirm password</label>
-                                  <input type="password" class="form-control" id="inputPassword"></div>
-                               </div>
+                                  <div class="input-group">
+                                    <div class="input-group-text bg-transparent">
+                                      <img src="assets/lock-icon.png" alt="lock-icon">
+                                    </div>
+                                     <input class="form-control border-end-0 border bg-transparent" type="password" value="password " id="password">
+                                </div>
+                                </div>
+                              </div>
                            </form>
-                           <div class="modal-footer d-flex justify-content-center">
-                              <button type="submit" class="btn btn-danger">
+                          </div>
+                          <div class="modal-footer d-flex justify-content-center">
+                              <button type="submit" class="btn signup-btn">
                                  SIGN UP
                               </button>
-                           </div>
                           </div>
+                      </div>
                   </div>
               </div>
             </span>
@@ -73,32 +94,32 @@
       
       <div data-bs-spy="scroll" data-bs-target="#scroll">
 
-        <div class="header-img" id="home">
-          <div class="d-flex pt-5">
-             <div class="col-md-7 d-flex flex-column justify-content-center align-items-center">
-                 <div class="d-flex flex-column justify-content-start">
-                   <div class=" display-4 fw-bold mb-4">LISTEN. PROMOTE.</div>
-                   <h4 class="mb-5"><i>Help make the world a better place by promoting <br>independent music you like</i></p>
+        <div class="header-img " id="home">
+          <div class=" d-flex pt-5 ">
+             <div class="col-lg-7 col d-flex flex-column justify-content-center align-items-center ">
+                 <div class="d-flex flex-column justify-content-start mt-5 pt-5">
+                   <div class=" display-5 fw-bold mb-4">LISTEN. PROMOTE.</div>
+                   <h4 class="header-line mb-5"><i>Help make the world a better place by promoting <br>independent music you like</i></p>
                    <h6 class="text-white mb-3">Signup For<span class="badge ms-1" style="background-color: rgb(244,130,130);">FREE</span></h6>
-                  <form class="row g-3 ">
+                  <form class="row g-3 mt-2">
                      <div class="col-8"> 
-                       <input type="email" class="form-control" id="email" placeholder="Your E-mail Address">
+                       <input type="email" class="form-control p-2" id="email" placeholder="Your E-mail Address">
                      </div>
                      <div class="col">
-                       <button type="submit" class="btn btn-success mb-3">Join</button>
+                       <button type="submit" class="btn btn-custom mb-3 ps-4 pe-4 pt-2 pb-2">Join</button>
                      </div>
                   </form>
                  </div>
              </div>
-             <div class="col-auto ms-5 mt-5 d-flex">
+             <div class="col-lg-auto d-lg-block d-none ms-5 mt-5 d-flex">
                  <img src="assets/ipad.png" class="img-fluid ms-3 mt-5 ">
              </div>
           </div>
         </div>
 
-        <div class="d-flex  align-items-center ms-5 mt-5 mb-5 pt-5" id="howItWorks">
-                <div class="col ms-5 pt-5 pl-5">
-                     <div class="row mb-5">
+        <div class="row d-flex  align-items-center ms-5 mt-5 mb-5 pt-5" id="howItWorks">
+                <div class="col ms-5 pt-5 pl-5 me-5">
+                     <div class="row-col mb-5">
                         <div class="col-1">
                             <img src="assets/promote-icn.png">
                         </div>
@@ -106,10 +127,10 @@
                             <h5 class="ms-3 mt-2 grey">Participate in promoting a song</h5>
                         </div>
                         <div class="row ms-4 mt-2 text-muted">
-                            Traditionally the only way a song gets promoted is through mainstream<br> media. Promod.io enables everyone to participate in making a song popular.
+                            Traditionally the only way a song gets promoted is through mainstream media. Promod.io enables everyone to participate in making a song popular.
                         </div>
                      </div>
-                     <div class="row mb-5">
+                     <div class="row-col mb-5">
                       <div class="col-1">
                           <img src="assets/share-icn.png">
                       </div>
@@ -117,7 +138,7 @@
                           <h5 class="ms-3 mt-2 grey">Power to Independent Musicians</h5>
                       </div>
                       <div class="row ms-4 mt-2 text-muted">
-                          Traditionally the only way a song gets promoted is through mainstream<br> media. Promod.io enables everyone to participate in making a song popular.
+                          Although there  are more independent musicians than ever before, with an exception o a few , popular music are still being driven by big budgets of recording labels. Promod.io enables small indie musicians to promote their songs to a wie audiene, even, without a marketing budget.
                       </div>
                      </div>
                      <div class="row mb-5">
@@ -128,7 +149,7 @@
                           <h5 class="ms-3 mt-2 grey"> The community</h5>
                       </div>
                       <div class="row ms-4 mt-2 text-muted">
-                          Traditionally the only way a song gets promoted is through mainstream<br> media. Promod.io enables everyone to participate in making a song popular.
+                          Promodions are passionate about music and can often be heard having long and deep dicussions about song,feel,hook,strcture,dynamics,etc. if you<br> are one of us, this is your home.
                       </div>
                      </div>
                      <div class="row mb-5">
@@ -154,13 +175,13 @@
             <div class="col-7">
               <div class="row ms-5">
                 <div class="col-1">
-                  <img src="assets/music-icn.png" class="img-fluid">
+                  <img src="assets/music-icn.png" >
                 </div>
-                <div class="col-11 ">
+                <div class="col-11 grey thin ">
                     <h4>Supporting independent musicians everywhere</h4>
                 </div>
                 <div class="row ms-4 mt-2 text-muted">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, sequi. Perspiciatis suscipit hic, fuga sunt repudiandae accusamus eum facere, maiores, ipsa quae libero quidem culpa.
+                    Great music are created everyday by musicians everywhere in te world. But only a very small frac-<br>tion get into mainstream media. We hope  to level the playing field for evey inde
                 </div>
             </div>
             </div>
@@ -168,42 +189,56 @@
             <img src="assets/boat-bg.jpg" height="400">
             </div>
           </div>
-          <div class="row d-flex justify-content-center mt-3 mb-5"> 1 2 3 4 5 </div>
+          <div class="pagination p1">
+            <ul class="d-inline">
+              
+              <a class="is-active" href="#"><li>1</li></a>
+              <a href="#"><li>2</li></a>
+              <a href="#"><li>3</li></a>
+              <a href="#"><li>4</li></a>
+            </ul>
+          </div>
         </div> 
 
-        <div id="contactUs" class="text-center p-5 m-5">
-            <h3 class="grey">Listen.Promote.</h3>
-            <i class="text-muted">Be a Promodion today and start listening to fresh music immediately.</i>
-            <form class="row">
-            <div class="d-flex flex-row"> 
-              <input type="email" class="form-control" id="email" placeholder="&#xF0e0; Enter your E-mail Address" style="font-family: Ariel,FontAwesome">
-              <button type="submit" class="btn btn-success mb-3">Join</button>
-            </div>
-        </form></p>
+        <div id="contactUs" class=" d-flex flex-column p-5 m-5">
+          <div class="d-flex flex-column align-items-center">
+            <h1 class="grey mb-5">Listen.Promote.</h2>
+            <i class="fs-4 text-muted mb-3">Be a Promodion today and start listening to fresh music immediately.</i>
+          </div>
+            <form class="d-flex mt-5 justify-content-center ">
+              <div class="col-6 me-5"> 
+                <input type="email" class="form-control p-3 " id="email" placeholder="Your E-mail Address" >
+              </div>
+              <div class="col-auto d-flex justify-content-end">
+                <button type="submit" class="btn btn-custom pe-5 ps-5 pt-3 pb-3">JOIN</button>
+              </div>
+            </form>
         </div>
         
-        <div class="footer">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="scroll">
+       
+        
+        <div class="footer bg-light custom-footer">
+        <nav class="navbar navbar-expand-lg navbar-light " id="scroll">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
-              <img src="assets/promodIO-logo.png" alt="" width="100%" height="30" class="d-inline-block align-text-top"/>
+              <img src="assets/footer-logo.png" alt="" width="100%" height="100%" class="d-inline-block ps-5 "/>
             </a>
            <div class=" navbar" id="navbarText">
-              <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 ">
+              <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 align-items-center">
                 <li class="nav-item me-2">
-                  <a class="nav-link" href="#home">HOME</a>
+                  <a class="nav-link" href="#home"><small>HOME</small></a>
                 </li>
                 <li class="nav-item me-2">
-                  <a class="nav-link" href="#whyPromod">ABOUT US</a>
+                  <a class="nav-link" href="#whyPromod"><small>ABOUT US</small></a>
                 </li>
                 <li class="nav-item me-2">
-                  <a class="nav-link" href="#howItWorks">HOW IT WORKS</a>
+                  <a class="nav-link" href="#howItWorks"><small>HOW IT WORKS</small></a>
                 </li>
-                <li class="nav-item me-2">
-                  <a class="nav-link" href="#contactUs">CONTACT US</a>
+                <li class="nav-item me-4">
+                  <a class="nav-link" href="#contactUs"><small>CONTACT </small></a>
                 </li>
                 <div class="vr"></div>
-                <li class="nav-item me-5">
+                <li class="nav-item ms-5 me-5">
                   <img src="assets/twitter-color.jpg">
                 </li>
                 <li class="nav-item me-5">
