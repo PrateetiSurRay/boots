@@ -1,0 +1,41 @@
+.header-img{
+    background-image: url(assets/inner-banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height:90vh;
+
+    align-items: center;
+    display:flex;
+    justify-content: center;
+ }
+.kanye{
+    position:absolute;
+    display: block;
+    border-radius: 50%;
+    border-width: 5px;
+    border-color: white;
+}
+.btn-custom{
+    background-color:rgba(119, 196, 68, 1);
+    color: white;
+    border-radius: 1;
+
+}
+.avatars{
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .img-1 {
+    background-color:red solid ;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 2px;
+  }
+  .img-2 {
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    
+  }
