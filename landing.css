@@ -1,7 +1,13 @@
-@import "//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css";
-
 .wrapper{
-  overflow-x:hidden;
+  overflow: hidden;
+}
+.custom-nav{
+  height: 80px;
+}
+.custom-footer{
+  height: 100%;
+  padding: 30px;
+  border-top: 0.5px solid rgb(234, 234, 234);
 }
 .header-img{
     background-image: url(assets/banner-bg.jpg);
@@ -12,10 +18,63 @@
     max-width: 100vw;
     color:white;
 }
+.header-line{
+  line-height: 50px;
+}
+.modal-divider{
+  width: 500px;
+  height: 50px;
+  align-items: center;
+}
+.btn-custom{
+  background-color:rgba(119, 196, 68, 1);
+  color: white;
+  border-radius: 1;
+}
 
-.peach{
+.btn-peach{
     color:rgb(244,130,130);
+    border-color: rgb(244,130,130);
+    
+    border-radius: 1;
+}
+.signup-btn{
+  background-color:rgb(244,130,130);
+  color: white;
+  border-radius: 0;
 }
 .grey{
-  color:rgb(65,80,99);
+  color:rgb(65,80,99); 
+}
+
+.pagination{
+  padding: 30px 0;
+  display: flex;
+  justify-content:center;
+}
+
+.pagination ul{
+  list-style-type: none;
+}
+
+.pagination a{
+  display: inline-block;
+  padding: 10px 18px;
+  color: rgb(65,80,99);
+}
+
+/* ONE */
+
+.p1 a{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+  text-align: center;
+}
+
+.p1 a.is-active{
+  background-color: rgb(244,130,130);
+  border-radius: 100%;
+  color: #fff;
 }
