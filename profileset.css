@@ -1,3 +1,8 @@
+.navbar-brand{
+    background-color:rgba(41, 58, 76, 1);
+    padding: 18px;
+   
+}
 .peach{
     background-color: rgba(244, 130, 130, 1);
     ;
@@ -12,4 +17,22 @@
 }
 .bg-custom{
     background-color: rgba(242, 245, 248, 1);
+}
+.btn-avatar{background-color:rgb(244,130,130);
+color: white;
+border-radius: 0;
+}
+.btn-peach{
+    color:rgb(244,130,130);
+    border-color: rgb(244,130,130);
+    
+    border-radius: 1;
+}
+.form{
+    
+    font-size: small;
+
+}
+hr{
+    margin-top: 0;
 }
