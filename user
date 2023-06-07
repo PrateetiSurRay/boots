@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="user.css">
     <title>Document</title>
 </head>
-<body class="bg-custom"> 
+  <body class="bg-custom"> 
     <nav class="navbar navbar-expand-lg navbar-dark nav-custom align-item-center">
           <a class="navbar-brand" href="#"><img src="assets/promodIO-logo-inner.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,26 +21,28 @@
               <li class="nav-item">
                 <button class="btn btn-peach" type="submit">Listen now</button>
               </li>
-              <span class="ms-3 me-4">|</span></p>
+              <span class="ms-3 me-4 pt-2 text-white">|</span>
               <li class="nav-item">
                 <a class="nav-link" href="#">Favorites</a>
               </li>
-              <span class="ms-3 me-4">|</span></p>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Search</a>
-              </li>
+              <span class="ms-3 me-4 pt-2 text-white">|</span>
+              <li class="nav-item d-flex flex-column ms-2">
+               <div class="row"> <a class="nav-link" href="#">Search</a></div>
+               <div class="row"><img src="assets/list-btm-border.png" style="height:1px; "></div>
+              </li>  
             </ul>
 
             <span>
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <div class="col-1 d-flex justify-content-center align-items-center">
-                    <div class="col d-flex  flex-column align-items-center justify-content-center ">
-                      <div class="credits">credits</div>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white small">
+                <li class="nav-item 
+                    d-flex justify-content-center align-items-center pe-2 ps-2" style="background-color: #4A5C70;">
+                 
+                    <div class="d-flex  flex-column align-items-center justify-content-center ">
+                      <div class="credits peachy">credits</div>
                       <p>356</p>
                     </div>
                     <div class="col"><img src="assets/circle-plus.png"></div>
-                  </div>
+          <!-- modal popup on credits -->
                 </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,7 +53,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <div class=" d-flex p-2 flex-column align-items-center justify-content-center peach text-white small">
+                <div class=" d-flex p-2 flex-column align-items-center justify-content-center peach">
                   <div class=""><img src="assets/maruee-plus.png"></div>
                   <p>UPLOAD</p>
                 </div>
@@ -62,37 +64,42 @@
     </nav>
 
     <div class="header-img"> 
-        <div class="d-flex flex-column align-items-center justify-content-center">
-            <img src="assets/avtaar-img.png" width="90px" class="avtaar mt-3">
-            <div class="mt-5 text-white text-center"><h1>Imagine Dragons</h1>
-            <p><i> Pop / rock / hiphop</i></p>
+        <div class="d-flex flex-column align-items-center justify-content-center mb-3">
+          <div class="col d-flex justify-content-center pt-3">
+            <div class="img-1">
+            <img src="assets/avtaar-img.png" alt="avatar" width="90%">  
+            </div></div>
+            <div class="mt-2 text-white text-center"><h1>Imagine Dragons</h1>
+            <p class="fs-4"><i> Pop / rock / hiphop</i></p>
             <img src="assets/form-facebook-icon.png">
             <img src="assets/form-twiter-icon.png">
             <img src="assets/form-youtube-icon.png"></div>
         </div>
     </div>
-    <div class="d-flex align-item-center justify-content-between" style="background-color: rgb(203, 190, 217);">
-        <div class="invisible">
-          <button class="btn btn-outline-danger peach ms-5 " type="submit">Edit profile</button>
-        </div>
-        <div class="d-flex ">
-            <h6 class="bg-custom">TRACKS<span class="badge ms-1" style="background-color: rgb(244,130,130);">137</span></h6>
-            <h6 >PROMOTERS<span class="badge ms-1" style="background-color: rgb(244,130,130);">561</span></h6>
-        </div>
-        <button class="btn btn-custom me-5 " type="submit">CONNECT</button>
-    </div>
+    
+    <div class="diviison 
+                d-flex align-item-center justify-content-between mb-5" style="background-color: rgb(203, 190, 217);">
+     <div class="invisible">
+     <button class="btn btn-outline-danger peach ms-5 " type="submit">Edit profile</button>
+     </div>
+     <div class="d-flex justify-content-center align-items-center">
+     <h6>TRACKS<span class="badge ms-1" style="background-color: rgb(244,130,130);">137</span></h6>
+     <h6 class="bg-light p-3 ms-3">PROMOTERS<span class="badge ms-1" style="background-color: rgb(244,130,130);">561</span></h6>
+     </div>
+     <button class="btn btn-custom me-5 mt-2 mb-2" type="submit">CONNECT</button>
+     </div> 
 
-    <div class="container">
+    <div class="avatar-container">
         <div class="row mt-5">
-            <div class="col">
-                <div class="img-1 peach">
+            <div class="col d-flex justify-content-center">
+                <div class="img-1-peach">
                 <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
                 <div class="img-2">
                 <img src="assets/tickmark.png" >
                 </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 <div class="img-1">
                 <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
                 <div class="img-2">
@@ -100,7 +107,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 <div class="img-1">
                 <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
                 <div class="img-2">
@@ -108,7 +115,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 <div class="img-1">
                 <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
                 <div class="img-2">
@@ -116,7 +123,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 <div class="img-1">
                 <img src="assets/avtaar-img.png" alt="avatar"width="90%">        
                 <div class="img-2">
@@ -124,7 +131,7 @@
                 </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col d-flex justify-content-center">
                 <div class="img-1">
                 <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
                 <div class="img-2">
@@ -141,266 +148,317 @@
                 </div>
             </div>
         </div>
-        <div class="row text-center mt-5">
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
+        <div class="row mt-5">
+          <div class="col d-flex justify-content-center">
+              <div class="img-1 ">
+              <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+              <div class="img-2">
+              <img src="assets/tickmark.png" >
+              </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+              <div class="img-1">
+              <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+              <div class="img-2">
+              <img src="assets/tickmark.png" >
+              </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+              <div class="img-1">
+              <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+              <div class="img-2">
+              <img src="assets/tickmark.png" >
+              </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+              <div class="img-1">
+              <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+              <div class="img-2">
+              <img src="assets/tickmark.png" >
+              </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+              <div class="img-1">
+              <img src="assets/avtaar-img.png" alt="avatar"width="90%">        
+              <div class="img-2">
+              <img src="assets/tickmark.png" >
+              </div>
+              </div>
+          </div>
+          <div class="col d-flex justify-content-center">
+              <div class="img-1">
+              <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+              <div class="img-2">
+              <img src="assets/tickmark.png" >
+              </div>
+              </div>
+          </div>
+          <div class="col">
+              <div class="img-1">
+              <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+              <div class="img-2">
+              <img src="assets/tickmark.png" >
+              </div>
+              </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+        <div class="col d-flex justify-content-center">
+            <div class="img-1 ">
+            <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+            <div class="img-2">
+            <img src="assets/tickmark.png" >
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
             </div>
         </div>
-        <div class="row text-center mt-5">
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
+        <div class="col d-flex justify-content-center">
+            <div class="img-1">
+            <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+            <div class="img-2">
+            <img src="assets/tickmark.png" >
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
             </div>
         </div>
-        <div class="row text-center mt-5">
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
+        <div class="col d-flex justify-content-center">
+            <div class="img-1">
+            <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+            <div class="img-2">
+            <img src="assets/tickmark.png" >
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <div class="img-1">
+            <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+            <div class="img-2">
+            <img src="assets/tickmark.png" >
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <div class="img-1">
+            <img src="assets/avtaar-img.png" alt="avatar"width="90%">        
+            <div class="img-2">
+            <img src="assets/tickmark.png" >
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
             </div>
-            <div class="col">
-                <div class="img-1">
-                <img src="assets/avtaar-img.png" alt="avatar">        
-                <div class="img-2">
-                <img src="assets/tickmark.png" >
-                </div>
-                </div>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <div class="img-1">
+            <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+            <div class="img-2">
+            <img src="assets/tickmark.png" >
             </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="img-1">
+            <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+            <div class="img-2">
+            <img src="assets/tickmark.png" >
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="row mt-5">
+      <div class="col d-flex justify-content-center">
+          <div class="img-1 ">
+          <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+          <div class="img-2">
+          <img src="assets/tickmark.png" >
+          </div>
+          </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+          <div class="img-1">
+          <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+          <div class="img-2">
+          <img src="assets/tickmark.png" >
+          </div>
+          </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+          <div class="img-1">
+          <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+          <div class="img-2">
+          <img src="assets/tickmark.png" >
+          </div>
+          </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+          <div class="img-1">
+          <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+          <div class="img-2">
+          <img src="assets/tickmark.png" >
+          </div>
+          </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+          <div class="img-1">
+          <img src="assets/avtaar-img.png" alt="avatar"width="90%">        
+          <div class="img-2">
+          <img src="assets/tickmark.png" >
+          </div>
+          </div>
+      </div>
+      <div class="col d-flex justify-content-center">
+          <div class="img-1">
+          <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+          <div class="img-2">
+          <img src="assets/tickmark.png" >
+          </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="img-1">
+          <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+          <div class="img-2">
+          <img src="assets/tickmark.png" >
+          </div>
+          </div>
+      </div>
+        </div>
+        <div class="row mt-5">
+    <div class="col d-flex justify-content-center">
+        <div class="img-1">
+        <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+        <div class="img-2">
+        <img src="assets/tickmark.png" >
+        </div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+        <div class="img-1">
+        <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+        <div class="img-2">
+        <img src="assets/tickmark.png" >
+        </div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+        <div class="img-1">
+        <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+        <div class="img-2">
+        <img src="assets/tickmark.png" >
+        </div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+        <div class="img-1">
+        <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+        <div class="img-2">
+        <img src="assets/tickmark.png" >
+        </div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+        <div class="img-1">
+        <img src="assets/avtaar-img.png" alt="avatar"width="90%">        
+        <div class="img-2">
+        <img src="assets/tickmark.png" >
+        </div>
+        </div>
+    </div>
+    <div class="col d-flex justify-content-center">
+        <div class="img-1">
+        <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+        <div class="img-2">
+        <img src="assets/tickmark.png" >
+        </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="img-1">
+        <img src="assets/avtaar-img.png" alt="avatar" width="90%">        
+        <div class="img-2">
+        <img src="assets/tickmark.png" >
+        </div>
+        </div>
+    </div>
         </div>
     </div>
 
-    <div class="d-flex align-items-center justify-content-between" style="background-color: #293A4C; color:white;">      
-        <div class="d-flex justify-content-start align-items-center">
-          <a href="#!">
-            <img src="assets/avtaar-img.png" alt="avatar"
-              class="img-fluid rounded-circle m-1  ">
-          </a>
-          <div class="d-flex flex-column ">
-              <small><h6>Dark Horse</h6>
-               <p>katy perry</p></small>
-          </div>
-        </div>
-       <div class="play-pause-btn d-flex">  
-        <i class="fa-sharp fa-regular fa-circle-pause" style="color: #ffffff;"></i>
-        <i class="fa-solid fa-forward-step ms-3"></i>
-       </div>
-       
-        <div class="controls d-flex col-6">
-          <span class="current-time">2:26</span>
-          <div class="slider col-8" data-direction="horizontal">
-            <div class="progress">
-              <div class="pin" id="progress-pin" data-method="rewind"></div>
-            </div>
-          </div>
-          <span class="total-time">5:32</span>
-          <div class="volume d-flex">
-            <div class="volume-btn">
-              <i class="fa-solid fa-volume-high"></i>
-            </div>
-             <div class="slider col-10" data-direction="horizontal">
-              <div class="progress">
-                <div class="pin" id="progress-pin" data-method="rewind"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-    
-        
-       <div class=" d-flex justify-content-start align-items-center">
-            
-          <a href="#">
-            <img src="assets/avtaar-img.png" alt="avatar"
-              class="img-fluid rounded-circle peach me-1" width="35">
-          </a>
-          <a href="#">
-            <img src="assets/avtaar-img.png" alt="avatar"
-              class="img-fluid rounded-circle peach me-1" width="35">
-          </a>
-          <a href="#">
-            <img src="assets/avtaar-img.png" alt="avatar"
-              class="img-fluid rounded-circle peach me-1" width="35">
-          </a>
-          
-          </a>
-          <button type="button" class="btn btn-round">25+</i>
-          </button>
-       </div>
-       <div class="d-flex justify-content-start align-items-center">
-          <p class="mb-0"></i> 
-            <span><small>PROMOTE TRACK</small></span>
-          <a href="#!">
-          <img src="assets/mypromoters-icon.png" alt="avatar"
-            class="img-fluid rounded-circle peach me-1 p-3">
-        </a>
-      </div>
-  
+    <div class="mb-5 text-center">
+      <button class="btn btn-peach">
+        LOAD MORE
+      </button>
     </div>
-    <div class="footer bg-light d-flex">
-      <div class="col-md-3">
-        <img src="assets/promodIO-logo.png" alt="footer-logo">
+
+    <div class=" music-control d-flex align-items-center justify-content-between" style="background-color: #293A4C; color:white;"> 
+         
+      <div class="d-flex justify-content-start align-items-center ms-4">
+          <img src="assets/avtaar-img.png" alt="avatar" class="img-fluid rounded-circle m-1">
+          <div class="d-flex flex-column ms-2">
+             <div class="sm mt-3 mb-auto">DARK HORSE</div>
+             <p class="xs">Prism-Katy Perry</p>
+          </div>
       </div>
-      <div class="col-md-6">
-        about us
-        Privacy policy 
-        help center
-        <span>
-          <img src="assets/footer-facebook-icon.png" alt="facebook">
-          <img src="assets/footer-twitter-icon.png" alt="facebook">
-          <img src="assets/footer-google-icon.png" alt="facebook">
+      <div class="play-pause-btn d-flex">  
+       <i class=" fa-lg fa-sharp fa-regular fa-circle-pause"></i>
+       <i class="fa-solid fa-forward-step fa-lg ms-3"></i>
+      </div>    
+      <div class="controls d-flex  col-6">
+        <span class="current-time">2:26</span>
+        <div class="container">
+          <div class = "progress" style="height:10px">  
+            <div class = "progress-bar peach" style = "width:85%">  
+            </div>  
+          </div>  
+        </div>  
+        <span class="total-time me-2 ">5:32</span>
+        <i class="fa-solid fa-volume-high"></i>
+        <div class="container col-2">
+          <div class = "progress" style="height:10px">  
+            <div class = "progress-bar peach" style = "width:75%">  
+            </div>  
+            </div>  
+        </div>  
+      </div>     
+      <div class=" d-flex justify-content-start align-items-center">
+      <span><small>PROMOTED</span></small>  
+
+          <img src="assets/avtaar-img.png" alt="avatar"
+            class="rounded-circle peach me-1 ms-1" width="35">
+
+          <img src="assets/avtaar-img.png" alt="avatar"
+            class="rounded-circle peach me-1" width="35">
+   
+          <img src="assets/avtaar-img.png" alt="avatar"
+            class="rounded-circle peach me-1" width="35">
+
+        <button type="button" class="btn btn-round-grey">+25 </button>
+      </div>
+      <div class="d-flex justify-content-start align-items-center">
+          <span><small>PROMOTE TRACK</small></span>
+        <img src="assets/mypromoters-icon.png" alt="avatar" class="img-fluid rounded-circle peach me-4 ms-1 p-3">
+      </div>
+
+    </div>
+
+    <div class="footer bg-light d-flex">
+      <div class="col-md-2 d-flex align-items-center">
+        <img src="assets/promodIO-logo.png" alt="footer-logo" style="transform: scale(0.7);">
+      </div>
+      <div class="footer-list col-md-6 d-flex justify-content-center">
+        <div class="col-3 d-flex align-items-center">About us</div>
+        <div class="col-3 d-flex align-items-center">Privacy policy </div>
+        <div class="col-3 d-flex align-items-center justify-content-center">Help center</div>
+  
+        <span class ='footer-icons d-flex col-md-3'>
+          <div class="col d-flex align-items-center"><img src="assets/footer-facebook-icon.png" alt="facebook"></div>
+         <div class="col d-flex align-items-center"><img src="assets/footer-twitter-icon.png" alt="facebook"></div>
+         <div class="col d-flex align-items-center"><img src="assets/footer-google-icon.png" alt="facebook"></div>
         </span>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4 d-flex flex-column d-flex align-items-center">
           <h6>Address or contacts</h6>
-          32 Baker street<br>Welcome@promod.io
+          <p class="text-muted small">32 Baker street<br>Welcome@promod.io</p>
       </div>
     </div>
-    </body>
-    </html>
+
+  </body>
+</html>
