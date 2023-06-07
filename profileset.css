@@ -1,7 +1,32 @@
+/* .input-group{
+    -webkit-border-radius: 0;
+       -moz-border-radius: 0;
+            border-radius: 0;
+        
+  } */
 .navbar-brand{
     background-color:rgba(41, 58, 76, 1);
     padding: 18px;
    
+}
+ .nav-custom{
+    background-color: rgba(52, 73, 96, 1);
+    padding: 0
+}
+.bg-custom{
+    background-color: rgba(242, 245, 248, 1);
+}
+.form{
+    
+    font-size: small;
+}
+.form .input-group{
+    border-radius: 0;
+    border: 2px solidblack;
+}
+
+hr{
+    margin-top: 0;
 }
 .peach{
     background-color: rgba(244, 130, 130, 1);
@@ -11,28 +36,40 @@
     color: rgba(244, 130, 130, 1);
 
 }
- .nav-custom{
-    background-color: rgba(52, 73, 96, 1);
-    padding: 0
+.sm{
+    font-size:14px;
 }
-.bg-custom{
-    background-color: rgba(242, 245, 248, 1);
+.xs{
+    font-size: 10px;
+}
+.btn-peach{
+    color:rgb(244,130,130);
+    border-color: rgb(244,130,130);  
+    border-radius: 1;
 }
 .btn-avatar{background-color:rgb(244,130,130);
 color: white;
 border-radius: 0;
+padding-left:24px;
+padding-right:30px;
 }
-.btn-peach{
-    color:rgb(244,130,130);
-    border-color: rgb(244,130,130);
-    
-    border-radius: 1;
-}
-.form{
-    
+.music-control{
+    color:white;
     font-size: small;
-
 }
-hr{
-    margin-top: 0;
+.btn-round-grey{
+    border-radius: 50%;
+    background-color:  rgba(52, 73, 96, 1);
+    color:white;
+    font-size: small;
 }
+.footer{
+    padding-top:4vw;
+    padding-bottom: 2vw;
+  }
+  .footer-list{
+    padding-left:10vw;
+  }
+  .footer-icons{
+    margin-left:15vw;
+  }
