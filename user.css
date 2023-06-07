@@ -9,6 +9,11 @@ padding: 18px;
 .bg-custom{
 background-color: rgba(242, 245, 248, 1);
 }
+.avatar-container{
+      width: 75vw;
+      margin:auto;
+      margin-bottom: 10vw;
+}
 .peach{
   background-color: rgba(244, 130, 130, 1);
   ;
@@ -22,16 +27,18 @@ background-color: rgba(242, 245, 248, 1);
   border-color: rgb(244,130,130);
   
   border-radius: 1;
-}.header-img{
+}
+.header-img{
     background-image: url(assets/inner-banner.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    min-height:90vh;
-
+    /* min-height:90vh; */
+    
     align-items: center;
     display:flex;
     justify-content: center;
  }
+
 .kanye{
     position:absolute;
     display: block;
@@ -45,13 +52,19 @@ background-color: rgba(242, 245, 248, 1);
     border-radius: 1;
 
 }
-.avatars{
-    position: relative;
-    top: 0;
-    left: 0;
-  }
+.img-1-peach {
+  position: relative;
+  background-color: rgb(221, 130,130);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2px;
+}
   .img-1 {
-   
     position: relative;
     background-color: rgb(221, 221, 221);
     width: 100px;
@@ -68,4 +81,14 @@ background-color: rgba(242, 245, 248, 1);
     top: 0px;
     right: 0;
     
+  }
+  .footer{
+    padding-top:4vw;
+    padding-bottom: 2vw;
+  }
+  .footer-list{
+    padding-left:10vw;
+  }
+  .footer-icons{
+    margin-left:15vw;
   }
