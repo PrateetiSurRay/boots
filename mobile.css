@@ -160,12 +160,14 @@
 
     .footer{
         flex-direction: column;
+        width:100%;
     }.footer-list{
         flex-direction: column;
     }
     .music-control{
         flex-direction: column;
         font-size:x-small;
+        width: 100%;
     }
     .logo{
       margin-bottom: 5vw;
