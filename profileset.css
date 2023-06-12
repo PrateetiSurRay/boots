@@ -1,9 +1,17 @@
-/* .input-group{
-    -webkit-border-radius: 0;
-       -moz-border-radius: 0;
-            border-radius: 0;
-        
-  } */
+@media (max-width: 800px){
+    .music-control{
+        flex-direction: column;
+        font-size:x-small;
+        width: 100%
+    }
+    .footer{
+      flex-direction: column;
+      width: 100%
+    }
+    .footer .contacts{
+      justify-content: space-around;
+    }
+  }
 .navbar-brand{
     background-color:rgba(41, 58, 76, 1);
     padding: 18px;
