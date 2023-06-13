@@ -169,6 +169,10 @@
         font-size:x-small;
         width: 100%;
     }
+      .music-control .song{
+        margin-right: 5vw;
+        margin-bottom: 4vh;
+    }
     .logo{
       margin-bottom: 5vw;
       font-size:small;
