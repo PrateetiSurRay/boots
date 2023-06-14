@@ -1,21 +1,6 @@
-@media (max-width: 800px){
-    .music-control{
-        flex-direction: column;
-        font-size:x-small;
-        width: 100%
-    }
-    .footer{
-      flex-direction: column;
-      width: 100%
-    }
-    .footer .contacts{
-      justify-content: space-around;
-    }
-  }
 .navbar-brand{
     background-color:rgba(41, 58, 76, 1);
-    padding: 18px;
-   
+    padding: 18px; 
 }
  .nav-custom{
     background-color: rgba(52, 73, 96, 1);
@@ -25,24 +10,20 @@
     background-color: rgba(242, 245, 248, 1);
 }
 .form{
-    
     font-size: small;
 }
 .form .input-group{
     border-radius: 0;
     border: 2px solidblack;
 }
-
 hr{
     margin-top: 0;
 }
 .peach{
     background-color: rgba(244, 130, 130, 1);
-    ;
 }
 .peachy{
     color: rgba(244, 130, 130, 1);
-
 }
 .sm{
     font-size:14px;
@@ -80,4 +61,18 @@ padding-right:30px;
   }
   .footer-icons{
     margin-left:15vw;
+  }
+@media (max-width: 800px){
+    .music-control{
+        flex-direction: column;
+        font-size:x-small;
+        width: 100%
+    }
+    .footer{
+      flex-direction: column;
+      width: 100%
+    }
+    .footer .contacts{
+      justify-content: space-around;
+    }
   }
