@@ -1,18 +1,3 @@
-@media (max-width: 800px){
-    .music-control{
-        flex-direction: column;
-        font-size:x-small;
-        width: 100%
-    }
-  
-    .footer{
-      flex-direction: column;
-      width: 100%
-    }
-    .footer .contacts{
-      justify-content: space-around;
-    }
-  }
 body {
   /* box-sizing: border-box; */
   -webkit-font-smoothing: antialiased;
@@ -25,7 +10,7 @@ body {
 }
 .navbar-brand{
   background-color:rgba(41, 58, 76, 1);
-  padding: 16px;
+  padding: 18px;
 }
 .bg-custom{
   background-color: rgba(242, 245, 248, 1);
@@ -156,13 +141,12 @@ body {
   margin-left: 1vw;
 }
 
-.hover .card-content .description {
+ .card-content .description {
   display: block !important;
   height: auto !important;
   opacity: 1 !important;
   transition: 0.4s display;
 }
-
 .card-meta {
   margin-left: 1vw;
 }
@@ -182,3 +166,18 @@ body {
 .footer-icons{
   margin-left:15vw;
 }
+@media (max-width: 800px){
+    .music-control{
+        flex-direction: column;
+        font-size:x-small;
+        width: 100%
+    }
+  
+    .footer{
+      flex-direction: column;
+      width: 100%
+    }
+    .footer .contacts{
+      justify-content: space-around;
+    }
+  }
