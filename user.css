@@ -1,24 +1,10 @@
-@media (max-width: 800px){
-    .music-control{
-        flex-direction: column;
-        font-size:x-small;
-        width: 100%
-    }
-    .footer{
-      flex-direction: column;
-      width: 100%
-    }
-    .footer .contacts{
-      justify-content: space-around;
-    }
-  }
 .nav-custom{
   background-color: rgba(52, 73, 96, 1);
   padding: 0
 }
 .navbar-brand{
 background-color:rgba(41, 58, 76, 1);
-padding: 16px;
+padding: 18px;
 }
 .bg-custom{
 background-color: rgba(242, 245, 248, 1);
@@ -94,7 +80,6 @@ background-color: rgba(242, 245, 248, 1);
     position: absolute;
     top: 0px;
     right: 0;
-    
   }
   .footer{
     padding-top:4vw;
@@ -105,4 +90,18 @@ background-color: rgba(242, 245, 248, 1);
   }
   .footer-icons{
     margin-left:15vw;
+  }
+@media (max-width: 800px){
+    .music-control{
+        flex-direction: column;
+        font-size:x-small;
+        width: 100%
+    }
+    .footer{
+      flex-direction: column;
+      width: 100%
+    }
+    .footer .contacts{
+      justify-content: space-around;
+    }
   }
