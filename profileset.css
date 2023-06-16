@@ -31,6 +31,11 @@ hr{
 .xs{
     font-size: 10px;
 }
+.modal-divider{
+    width: 500px;
+    height: 50px;
+    align-items: center;
+  }
 .btn-peach{
     color:rgb(244,130,130);
     border-color: rgb(244,130,130);  
