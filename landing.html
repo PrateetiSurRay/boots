@@ -9,11 +9,11 @@
 
 
     <link rel="stylesheet" href="landing.css">
-    <title>Document</title>
+    <title>Promod.io</title>
 </head>
 <body>
    
-<nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav" id="scroll">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light custom-nav" id="scroll">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="assets/promodIO-logo.png" alt="" width="100%" height="auto" class="d-inline-block align-text-top ps-5"/>
@@ -34,7 +34,7 @@
               </li>
             </ul>
             <span class="me-5">
-                <button class="btn btn-outline btn-peach me-5 ps-4 pe-4" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal"><small>LOG IN</small></button>
+               <button class="btn btn-outline btn-peach me-5 ps-4 pe-4" type="submit" data-bs-toggle="modal" data-bs-target="#loginModal"><small>LOG IN</small></button>
                 <div class="modal fade " id="loginModal">
                   <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
@@ -78,7 +78,7 @@
                               </div>
                            </form>
                            <div class="d-flex mt-3 justify-content-center">
-                              <button type="submit" class="btn ps-2 pb-3 signup-btn">
+                              <button type="submit" class="btn ps-4 pe-4 signup-btn">
                                  SIGN UP
                               </button>
                           </div>
@@ -93,11 +93,9 @@
     <div class="wrapper ">
       
       <div data-bs-spy="scroll" data-bs-target="#scroll">
-
-        <div class="header-img " id="home">
-          <div class=" d-flex pt-5 ">
+        <div class="header-img d-flex align-items-center" id="home">
              <div class="col-lg-7 col d-flex flex-column justify-content-center align-items-center ">
-                 <div class="d-flex flex-column justify-content-start mt-5 pt-5">
+                 <div class="d-flex flex-column justify-content-center">
                    <div class=" display-5 fw-bold mb-4">LISTEN. PROMOTE.</div>
                    <h4 class="header-line mb-5"><i>Help make the world a better place by promoting <br>independent music you like</i></p>
                    <h6 class="text-white mb-3">Signup For<span class="badge ms-1" style="background-color: rgb(244,130,130);">FREE</span></h6>
@@ -111,15 +109,14 @@
                   </form>
                  </div>
              </div>
-             <div class="col-lg-auto d-lg-block d-none ms-5 mt-5 d-flex">
-                 <img src="assets/ipad.png" class="img-fluid ms-3 mt-5 ">
+             <div class=" ipad col-lg-auto d-lg-block d-none">
+              <img src="assets/ipad.png" class="img-fluid ">
              </div>
-          </div>
         </div>
 
         <div class="row d-flex  align-items-center ms-5 mt-5 mb-5 pt-5" id="howItWorks">
                 <div class="col ms-5 pt-5 pl-5 me-5">
-                     <div class="row-col mb-5">
+                     <div class="row mb-5">
                         <div class="col-1">
                             <img src="assets/promote-icn.png">
                         </div>
@@ -130,7 +127,7 @@
                             Traditionally the only way a song gets promoted is through mainstream media. Promod.io enables everyone to participate in making a song popular.
                         </div>
                      </div>
-                     <div class="row-col mb-5">
+                     <div class="row mb-5">
                       <div class="col-1">
                           <img src="assets/share-icn.png">
                       </div>
@@ -171,8 +168,8 @@
        
         <div class=" bg-light pt-5 pb-5"id="whyPromod">
          <h1 class="text-center grey mt-5">WHY <span class="peach">PROMOD.IO</span>?</h1>
-          <div class="row d-flex align-items-center ms-5">
-            <div class="col-7">
+          <div class="whyPromod d-flex align-items-center ms-5">
+            <div class="col-6">
               <div class="row ms-5">
                 <div class="col-1">
                   <img src="assets/music-icn.png" >
@@ -181,17 +178,16 @@
                     <h4>Supporting independent musicians everywhere</h4>
                 </div>
                 <div class="row ms-4 mt-2 text-muted">
-                    Great music are created everyday by musicians everywhere in te world. But only a very small frac-<br>tion get into mainstream media. We hope  to level the playing field for evey inde
+                    Great music are created everyday by musicians everywhere in te world. But only a very small frac-tion get into mainstream media. We hope  to level the playing field for evey inde
                 </div>
             </div>
             </div>
             <div class="col d-flex justify-content-end">
-            <img src="assets/boat-bg.jpg" height="400">
+            <img src="assets/boat-bg.jpg" height="480">
             </div>
           </div>
           <div class="pagination p1">
             <ul class="d-inline">
-              
               <a class="is-active" href="#"><li>1</li></a>
               <a href="#"><li>2</li></a>
               <a href="#"><li>3</li></a>
@@ -214,17 +210,16 @@
               </div>
             </form>
         </div>
-        
-       
-        
-        <div class="footer bg-light custom-footer">
+      </div>  
+ 
+      <div class="footer bg-light custom-footer">
         <nav class="navbar navbar-expand-lg navbar-light " id="scroll">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="assets/footer-logo.png" alt="" width="100%" height="100%" class="d-inline-block ps-5 "/>
             </a>
-           <div class=" navbar" id="navbarText">
-              <ul class="navbar-nav ms-auto me-5 mb-2 mb-lg-0 align-items-center">
+           <div class="navbar " id="navbarText">
+              <ul class="navbar-nav footer-nav ms-auto align-items-center">
                 <li class="nav-item me-2">
                   <a class="nav-link" href="#home"><small>HOME</small></a>
                 </li>
@@ -237,7 +232,9 @@
                 <li class="nav-item me-4">
                   <a class="nav-link" href="#contactUs"><small>CONTACT </small></a>
                 </li>
-                <div class="vr"></div>
+              </ul>
+              <div class="vr"></div>
+              <ul class="navbar-nav footer-nav me-5 align-items-center">
                 <li class="nav-item ms-5 me-5">
                   <img src="assets/twitter-color.jpg">
                 </li>
@@ -251,7 +248,6 @@
            </div>
           </div>
         </nav> 
-        </div>
       </div>
 
     </div>
