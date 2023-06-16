@@ -37,29 +37,65 @@
       <span>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-white small">
           <li class="nav-item 
-              d-flex justify-content-center align-items-center pe-2 ps-2" style="background-color: #4A5C70;">
-           
+              d-flex justify-content-center align-items-center pe-2 ps-2" style="background-color: #4A5C70;"data-bs-toggle="modal" data-bs-target="#loginModal">          
               <div class="d-flex  flex-column align-items-center justify-content-center pe-2 ps-2">
                 <div class="credits peachy pt-2">credits</div>
                 <p class="pb-1">356</p>
               </div>
               <div class="col"><img src="assets/circle-plus.png"></div>
-            
           </li>
-        <li class="nav-item dropdown">
+          <!-- modal-popup -->
+           <div class="modal fade " id="loginModal">
+               <div class="modal-dialog modal-dialog-centered">
+                   <div class="modal-content">
+                       <div class="modal-header d-flex flex-column">
+                           <div class="modal-title mb-3">
+                               <img src="assets/promodIO-logo.png"/>
+                           </div>
+                           <div class="modal-divider d-flex justify-content-center fs-4" style="color:white; background-color: rgb(57, 71, 102)">BUY CREDITS</div>
+                           <div class="d-flex justify-content-between mt-4 text-muted">
+                             We have a <span class="peachy"><strong>350 credit</strong></span> on our site
+                           </div>
+                       </div>
+                       <div class="modal-body bg-custom">
+                         <div class="d-flex justify-content-center align-items-center">
+                          <form class="mb-3 col-6">
+                          <label for="email" class="form-label text-muted"><small>You want to buy</small></label>
+                          <div class="input-group d-flex">
+                          <div class="input-group-text bg-white">
+                            <img src="assets/lock-icon.png" alt="lock-icon">
+                          </div>
+                           <input type="email" class="form-control" id="email" placeholder="000">
+                          </div>
+                          </form>
+                          <div class="col-2 mt-2 ms-2 text-muted">credits</div>
+                         </div>
+                        
+                        <div class="d-flex mt-3 justify-content-center">
+                           <button type="submit" class="btn ps-4 pe-4 btn-peach">
+                             <div class="col">PAY WITH</div>
+                             <div class="col"><img src="assets/paypal-seeklogo.com.svg"/></div> 
+                           </button>
+                       </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+          <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img src="assets/avtaar-img.png">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="#">avatar-2</a></li>
           </ul>
-        </li>
-        <li class="nav-item">
+          </li>
+          <li class="nav-item">
           <div class=" d-flex p-2 flex-column align-items-center justify-content-center peach">
             <div class=""><img src="assets/maruee-plus.png"></div>
             <p>UPLOAD</p>
           </div>
-        </li>
+          </li>
         </ul>
       </span>
    </div>
@@ -78,7 +114,7 @@
       </div>
       <div class="d-flex justify-content-center align-items-center">
         <h6 class="bg-light me-3 p-3">TRACKS<span class="badge ms-1" style="background-color: rgb(244,130,130);">137</span></h6>
-        <h6>PROMOTERS<span class="badge ms-1" style="background-color: rgb(244,130,130);">561</span></h6>
+        <a href="user.html" style="text-decoration: none; color:black"><h6>PROMOTERS<span class="badge ms-1" style="background-color: rgb(244,130,130);">561</span></h6></a>
       </div>
       <button class="btn btn-peach me-5 mt-2 mb-2" type="submit">Edit profile</button>
     </div>
@@ -637,6 +673,6 @@
         </div>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
